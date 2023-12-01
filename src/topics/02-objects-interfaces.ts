@@ -8,9 +8,11 @@ interface IPerson {
 interface IStudent extends IPerson {
 	career: string;
 	university: string;
+	cycle?: number; // con el operador '?' indicamos que un atributo del objecto es opcional
 }
 
 // OBJECTS
+// creación de objeto sin definir un modelo de dato
 const vilma = {
 	name: 'Vilma',
 	lastName: 'Bravo Torres',

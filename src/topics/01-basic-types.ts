@@ -58,9 +58,9 @@ console.log('Apellidos: ', lastName);
 
 console.log('********* CONCATENACION ********');
 
-const fullName = `${name} ${lastName}`;
+const fullName = `Template Literals (String Interpolation) => ${name} ${lastName}`;
 
-console.log('Template Literals (String Interpolation) => ', fullName);
+console.log(fullName);
 console.log('Operador + => ', name + ' ' + lastName);
 console.log('Concat=> ', name.concat(' ').concat(lastName));
 
