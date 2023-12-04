@@ -1,4 +1,4 @@
-// number, string, boolean, any
+// number, string, boolean, Date, any
 
 //#region NUMBER
 console.log('************************');
@@ -84,6 +84,20 @@ console.log('Usas Angular?: ', useAngular);
 console.log('Comparación mediante una expresión: 5 es mayor que 2? => ', comparisonExpression);
 console.log('Convertir texto a boolean usando la función Boolean =>  ', Boolean(booleanText));
 console.log('Convertir texto a boolean usando doble negación !! =>  ', !!booleanText);
+
+//#endregion
+
+//#region  DATE
+console.log('************************');
+console.log('********DATE**********');
+console.log('************************');
+
+// 30/11/2023
+// 20233011
+
+const dateNow = new Date();
+console.log('La fecha actual es: ', dateNow);
+console.log('La fecha actual es: ', dateNow.getFullYear());
 
 //#endregion
 

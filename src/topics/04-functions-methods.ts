@@ -29,7 +29,7 @@ const sum2 = (a: number, b: number) => {
 console.log('1) Suma de números: ', sum(5, 6));
 console.log('2) Suma de números: ', sum2(10, 6));
 
-// En caso que los metodos o funciones requieran multiples parametros lo ideal es pasar todo por un objecto
+// En caso que los metodos o funciones requieran multiples parametros lo ideal es pasar todo por un objeto
 
 // Esto es una mala practica❌
 const showStudentData = (
