@@ -52,10 +52,10 @@ console.log('firstString: ', firstString); // Output: "a"
 
  */
 
-interface IResponse<T> {
+interface IResponse<T = void> {
 	code: string;
 	message: string;
-	data: T;
+	data?: T;
 }
 
 const customer: ICustomer = {
@@ -75,8 +75,11 @@ const responseArray: IResponse<ICustomer[]> = {
 
 const responseOther: IResponse<boolean> = { code: 'INFO001', message: 'Sin errores al procesar', data: false };
 
+const responseOther2: IResponse = { code: 'INFO001', message: 'Sin errores al procesar' };
+
 console.log('Response Object: ', responseObject);
 console.log('Response Array: ', responseArray);
 console.log('Response Other: ', responseOther);
+console.log('Response Other 2: ', responseOther2);
 
 export {};
